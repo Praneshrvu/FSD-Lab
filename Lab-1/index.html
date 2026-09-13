@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Development - Lab 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul {
+            text-align: left;
+            background-color: #f8fafc;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            list-style-type: square;
+        }
+
+        li {
+            margin: 6px 0;
+            font-size: 0.95rem;
+        }
+
+        button {
+            background-color: #2563eb;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        #outputMessage {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #16a34a;
+        }
+
+        .links {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .links a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Full Stack Development - Lab 1</h1>
+        <p>Inspecting Browser Developer Tools</p>
+        
+        <ul>
+            <li><strong>Course:</strong> CS3301 - Full Stack Development</li>
+            <li><strong>Topic:</strong> Browser DevTools (Elements, Console, Network)</li>
+            <li><strong>Institution:</strong> RV University</li>
+        </ul>
+
+        <button id="testBtn">Click to Test Console Log</button>
+        <p id="outputMessage"></p>
+
+        <div class="links">
+            <a href="../Lab-2/index.html">Open Lab 2 &rarr;</a>
+            <a href="../Lab-3/index.html">Open Lab 3 &rarr;</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

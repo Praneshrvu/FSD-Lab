@@ -1,0 +1,210 @@
+/* =========================================================
+   Lab 2: Designing Responsive Web Pages Using HTML5 & CSS3
+   Course: CS3301 - Full Stack Development
+   ========================================================= */
+
+/* 1. Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333333;
+}
+
+/* 2. Header and Navigation (Using Flexbox) */
+.header {
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+/* 3. Hero Section */
+.hero {
+    background: linear-gradient(rgba(31, 41, 55, 0.8), rgba(31, 41, 55, 0.8)),
+                url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80') center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 1.5rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #1f2937;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0ea5e9;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* 4. About Section */
+.about {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555555;
+}
+
+/* 5. Events Section & Content Cards (Using Flexbox) */
+.events {
+    padding: 3rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.events h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+/* 6. Card Styling & Interactive Hover Effect */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Interactive Hover Effect on Card */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.25rem;
+}
+
+.card-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    color: #666666;
+}
+
+/* 7. Footer */
+.footer {
+    background-color: #1f2937;
+    color: #9ca3af;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.footer p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+/* 8. Media Queries for Responsiveness */
+
+/* Tablet & Mobile Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+    }
+
+    .navbar a {
+        margin: 0 0.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Stack cards vertically on smaller screens */
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

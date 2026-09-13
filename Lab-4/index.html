@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Board - Lab 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <span class="badge">Experiment 4</span>
+            <h1>Task Board</h1>
+            <p class="subtitle">Add a task, mark it done, or remove it. The list you see always matches the current state.</p>
+        </header>
+
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="What do you need to do?" autocomplete="off" required>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <div class="stats">
+            <p id="status"></p>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
